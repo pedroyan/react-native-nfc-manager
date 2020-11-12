@@ -1,6 +1,6 @@
 {
   "name": "react-native-nfc-manager-pedro-fork",
-  "version": "2.1.13",
+  "version": "2.1.14",
   "description": "A NFC module for react native.",
   "main": "NfcManager",
   "repository": {
