@@ -9,9 +9,11 @@ declare module 'react-native-nfc-manager' {
     StateChanged = 'NfcManagerStateChanged',
   }
 
+  export type StateChangeType = 'on' | 'off' | 'turning_on' | 'turning_off';
+
   type OnDiscoverTag = (evt: TagEvent) => void;
   type OnSessionClosed = (evt: {}) => void;
-  type OnStateChanged = (evt: {state: string}) => void;
+  type OnStateChanged = (evt: {state: StateChangeType}) => void;
   type OnNfcEvents = OnDiscoverTag | OnSessionClosed | OnStateChanged;
 
   export enum NfcTech {
